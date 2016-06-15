@@ -1,0 +1,16 @@
+HandlerAdapter 负责Controller中方法的处理
+常用的实现有
+RequestMappingHandlerAdapter　processing requests with annotated controller methods
+HttpRequestHandlerAdapter　　processing requests with {@link HttpRequestHandler}
+SimpleControllerHandlerAdapter　processing requests with interface-based {@link Controller}s
+
+HandlerExceptionResolver　负责异常处理
+常用的实现有
+ExceptionHandlerExceptionResolver　处理用@ExceptionHandler注解的方法
+ResponseStatusExceptionResolver　处理@ResponseStatus注解的方法
+DefaultHandlerExceptionResolver 处理已知的各种Spring异常
+
+RequestMappingHandlerAdapter　和　RequestMappingHandlerAdapter　都用到
+ContentNegotiationManager内容协商管理器
+DefaultFormattingConversionService格式转换器
+LocalValidatorFactoryBean　合法验证器
